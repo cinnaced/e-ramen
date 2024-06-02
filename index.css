@@ -441,27 +441,61 @@ header{
 }
 /* navbar ends */
 
-    /* footer styling */
-    .footer .box-container{
-        gap: 1rem;
-    }
+/* footer styling */
+.footer{
+    position: relative;
+    top: 150px;
+    background-color: #BA3F1D;
+}
 
-    .footer .box-container .box{
-        flex: 1 1 10rem;
-    }
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
 
-    .footer .box-container .box h3{
-        font-size: 1.5rem;
-    }
+.footer .box-container .box{
+    position: relative;
+    flex: 1 1 15rem;
+    padding-bottom: 1rem;
+}
 
-    .footer .box-container .box a{
-        font-size: 0.8rem;
-    }
+.footer .box-container .box h3{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 0.2rem solid #fff;
+}
 
-    .footer .copyright{
-        font-size: 1rem;
-    }
-    /* footer ends */
+.footer .box-container .box a{
+    display: block;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: #EEE3AB;
+    text-decoration: underline;
+}
+
+.footer .copyright{
+    position: relative;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+    color: white;
+    border-top: 0.1rem solid white;
+}
+
+.footer .copyright span{
+    color: #EEE3AB;
+}
+/* footer ends */
 
 /* media styling */
 @media(max-width: 1400px){
