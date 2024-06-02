@@ -1,0 +1,548 @@
+/* base styling */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+body{
+    background: white;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #BA3F1D;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin: 0.5rem;
+    border-bottom: 0.2rem solid #BA3F1D;
+    top: 100px;
+}
+/* end base */
+
+/* carousel styling */
+.carousel{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    /* height: 50vw; */
+    overflow: hidden;
+}
+
+.gallery{
+    width: 500%;
+    /* height: 42.8vw; */
+    display: flex;
+}
+
+.gallery input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/* manual nav */
+
+.manual-nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-top: -5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: white;
+    transition: 0.5s;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* auto button visibility not working */
+
+.auto-nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-top: -5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.auto-nav div{
+    border: 2px solid white;
+    padding: 0.5vw;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.auto-nav div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .auto-nav .auto-nav1{
+    background: white;
+}
+
+#radio2:checked ~ .auto-nav .auto-nav2{
+    background: white;
+}
+
+#radio3:checked ~ .auto-nav .auto-nav3{
+    background: white;
+}
+
+#radio4:checked ~ .auto-nav .auto-nav4{
+    background: white;
+}
+/* carousel styling ends */
+
+/* carousel content*/
+section{
+    padding: 2rem 9%;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 92.5vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Assets/pork-miso.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 100%;
+}
+
+.banner .content h3{
+    font-size: 6rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.7rem solid #BA3F1D;
+}
+
+.banner .content span{
+    font-size: 3.5rem;
+    color: #D9CFC1;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.banner2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 92.5vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Assets/chilled-tsukemen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner2 .content{
+    max-width: 100%;
+}
+
+.banner2 .content h3{
+    font-size: 6rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.7rem solid #BA3F1D;
+}
+
+.banner2 .content span{
+    font-size: 3.5rem;
+    color: #D9CFC1;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.banner3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 92.5vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Assets/beef-spicy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner3 .content{
+    max-width: 100%;
+}
+
+.banner3 .content h3{
+    font-size: 6rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.7rem solid #BA3F1D;
+}
+
+.banner3 .content span{
+    font-size: 3.5rem;
+    color: #D9CFC1;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.banner4{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 92.5vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Assets/chicken-original.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner4 .content{
+    max-width: 100%;
+}
+
+.banner4 .content h3{
+    font-size: 6rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.7rem solid #BA3F1D;
+}
+
+.banner4 .content span{
+    font-size: 3.5rem;
+    color: #D9CFC1;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.button{
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    /* font-weight: 600; */
+    cursor: pointer;
+    color: #fff;
+    text-transform: none;
+    /* border: 0.1rem solid #BA3F1D; */
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    background: #BA3F1D;
+    transition: 0.2s;
+}
+
+.button:hover{
+    background: #fff;
+    color: #BA3F1D;
+    /* font-weight: 600; */
+}
+/* carousel content ends */
+
+/* rec menu starts */
+.menu .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center
+}
+
+.menu .container .box{
+    position: relative;
+    top: 130px;
+    flex-basis:20rem;
+    /* box-shadow: 0 0.5rem 1.5rem black; */
+    border-radius: 0.5rem;
+    border: 0.1 rem solid black;
+}
+
+/* .menu .bg{
+    position: absolute;
+    top: 1400px;
+    left: 0px;
+    width: 99vw;
+    height: 45vw;
+    background-color: antiquewhite;
+} */
+
+.menu .container .box .discount{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.8rem 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D9CFC1;
+    background: #BA3F1D;
+    /* z-index: 1; */
+    border-radius: 0.5rem;
+    /* opacity: 0.6; */
+}
+
+.menu .container .box .image{
+    position: relative;
+    text-align: left;
+    margin: 2rem;
+    /* overflow: hidden; */
+}
+
+.menu .container .box .image img{
+    height: 22.5rem;
+    width: 22.5rem;
+    border-radius: 0.5rem;
+}
+
+.menu .container .box:hover{
+    transform: translate(0px, -8px);
+    transition: 0.5s;
+}
+
+.menu .container .box .content{
+    padding: 0 2rem 3rem;
+    text-align: left;
+}
+
+.menu .container .box .content h3{
+    font-size: 2rem;
+    color: black;
+}
+
+.menu .container .box .content .price{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+    padding-top: 0.7rem;
+}
+
+.menu .container .box .content .price span{
+    font-size: 1rem;
+    margin: 0.5rem;
+    color: gray;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.menu .container .box .content p{
+    font-size: 1rem;
+    color: black;
+    padding-top: 1rem;
+}
+
+/* rec menu ends */
+
+/* navbar styling */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #BA3F1D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo{
+    margin: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ham-menu{
+    display: none
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li a{
+    font-weight: 700;
+    display: block; 
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 20px 27px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 10px;
+}
+
+.navbar ul li a:hover{
+    font-weight: 700;
+    color: #BA3F1D;
+    background: #fff;
+}
+
+.navbar ul li a.active{
+    font-weight: 700;
+    color: #BA3F1D;
+    background: #fff;
+}
+/* navbar ends */
+
+    /* footer styling */
+    .footer .box-container{
+        gap: 1rem;
+    }
+
+    .footer .box-container .box{
+        flex: 1 1 10rem;
+    }
+
+    .footer .box-container .box h3{
+        font-size: 1.5rem;
+    }
+
+    .footer .box-container .box a{
+        font-size: 0.8rem;
+    }
+
+    .footer .copyright{
+        font-size: 1rem;
+    }
+    /* footer ends */
+
+/* media styling */
+@media(max-width: 1400px){
+    header{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 1180px){
+    header{
+        padding: 0 30px;
+    }
+
+    .ham-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .ham-menu .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+
+    .navbar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #BA3F1D;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .navbar.active{
+        height: 550px;
+    }
+
+    .navbar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .navbar.active ul{
+        opacity: 1;
+    }
+
+    .navbar ul li a{
+        margin-bottom: 20px;
+    }
+}
+/* navbar ends */
+
+@media(max-width: 768px){
+    /* footer styling */
+    .footer .box-container{
+        gap: 1rem;
+    }
+
+    .footer .box-container .box{
+        flex: 1 1 10rem;
+    }
+
+    .footer .box-container .box h3{
+        font-size: 1.5rem;
+    }
+
+    .footer .box-container .box a{
+        font-size: 0.8rem;
+    }
+
+    .footer .copyright{
+        font-size: 1rem;
+    }
+    /* footer ends */
+}
+/* media styling ends*/
